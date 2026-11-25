@@ -1,0 +1,8 @@
+<header class="header">
+    <h1>My Store</h1>
+    <nav>
+        <a routerLink="/">Product List</a>
+        |
+        <a routerLink="/cart">Cart <span class="cart-badge" *ngIf="cartService.items.length > 0">({{ cartService.items.length }})</span></a>
+    </nav>
+</header>
